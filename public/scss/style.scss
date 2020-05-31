@@ -1,0 +1,169 @@
+@import "variables";
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Dosis', sans-serif;
+    line-height:1.7;
+}
+
+#main{
+    .main-nav{
+        background-color:$primary-color;
+        .nav-data{
+            display:flex;
+            justify-content:space-between;    
+            .nav-left{
+                color:$main-color;
+                font-size:1.3rem;
+                font-weight: bold;
+            }
+            .nav-items{ 
+                ul
+                {
+                text-align:center;
+                display:flex;
+                li a{
+                    display:block;
+                    padding:1rem 2rem ;
+                    &:hover,&.current{
+                        background-color:$secondary-color;
+                        color:$main-color;
+                    }
+                }
+            }
+            }
+        }
+    }
+}
+
+#heading{
+    background:url("../img/showcase.jpg") center center/cover;
+    background-attachment: fixed;
+    height:92vh;
+    color:white;
+    .heading-content{
+        display:flex;
+        flex-direction:column;
+        padding-top:170px;
+        align-items: center;
+        h1{
+            font-size:3rem;
+            padding-bottom:1rem;
+        }
+    }
+}
+
+#history{
+    height:400px;
+    color:white;
+    background-color: $primary-color;
+    .history-image{
+        float:left;
+        min-height: 100%;
+        width:40%;
+        background:url("../img/test-bg.jpg") no-repeat center center/cover;
+    }
+    .history-content{   
+        .data{
+            float:right;
+            width:60%;
+            height:100%;
+            overflow:hidden;
+            height:inherit;
+            h1{
+                font-size:2.5rem;
+                text-align:center;
+            }
+        }
+    }
+}
+
+#about{
+    text-align:center;
+    overflow:hidden;
+    .about-content{
+        height:inherit;
+        display:flex;
+        div:first-child,div:last-child{
+            background-color:$light-color;
+        }
+        div:nth-child(2){
+            background-color:$main-color;
+        }
+        div{
+            padding:3rem 2rem;
+        }
+    }
+}
+
+//about-page//
+
+#about-page{
+    overflow:hidden;
+    height:450px;
+    background-color: $primary-color;
+    color:white;
+    padding-top:10px;
+    .about-content{
+        .paragraph{
+            text-align:center;
+            float:left;
+            width:50%;
+        }
+        .image{
+            float:right;
+            width:50%;
+            height: 100%;
+            img{
+                display:block;
+                width:100%;
+                height:100%;
+                border-radius:30%;
+            }
+        }
+    }
+}
+
+#testimonials{
+    color:white;
+    padding:2rem;
+    background:url("../img/test-bg.jpg") no-repeat center center/cover;
+    background-attachment:fixed;
+    .test-content{
+        margin:auto;
+        h3{
+            text-align:center;
+            font-size:2rem;
+        }
+        .tag{
+            padding:2rem 2rem;
+            margin:0.5rem 1rem;
+            background-color:rgba(180,150,109,0.8);
+            border-radius:20%;
+            img{
+                float:left;
+                width:100px;
+                height:100px;
+                border-radius:20%;
+                margin-right:0.5rem;
+            }
+            p{
+                text-align:justify;
+            }
+        }
+    }
+}
+
+
+
+footer{
+    background-color: $primary-color;
+    text-align:center;
+    color:white;
+    padding:2rem 4rem;
+}
+
+@import "tablet";

@@ -1,0 +1,110 @@
+@media(max-width:420px){
+    #main{
+        .main-nav{
+            .nav-data{
+                flex-direction: column;
+                .nav-items{
+                    ul{
+                        flex-direction:column;
+                        text-align:center;
+                    }
+                }
+            }
+        }
+    }
+
+    #heading{
+        height:50vh;
+        .heading-content{
+            padding:10px;
+            h1{
+                text-align:center;
+                font-size:2rem;
+            }
+        }
+    }
+
+    #history{
+        height:590px;
+    }
+
+    #about-page{
+        height:550px;
+        .about-content{
+            .paragraph{
+                float:none;
+                width:100%;
+            }
+            .image{
+                float:none;
+                display:none;
+            }
+        }
+    }
+
+    footer{
+        padding:0;
+        font-size:0.6rem;
+    }
+}
+
+
+@media(max-width:780px){
+    #history{
+        height:500px;
+        position: relative;
+        background:url("../img/test-bg.jpg") no-repeat center center/cover;
+        background-attachment:fixed;
+        .history-image{
+            float:none;
+            background: none;
+        }
+        .data{
+            float:none;
+            width:100%!important;
+            height:100%!important;
+            position:absolute;
+            top:0;
+            left:0;
+            z-index:2;
+            //overlay
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background-color:rgba(200,109,19,0.4);
+        }
+    }
+    #about-page{
+        height:350px;
+        .about-content{
+            .paragraph{
+                padding:0.2rem;
+                float:none;
+                width:100%;
+            }
+            .image{
+                float:none;
+                display:none;
+            }
+        }
+    }
+    #testimonials{
+        padding:0.5rem;
+        .test-content{
+            .tag{
+                padding:0;
+                margin:0;
+            }
+        }
+    }
+}
+@media(max-width:600px){
+    #about{
+        .about-content{
+            flex-direction:column;
+            
+        }
+    }
+}
